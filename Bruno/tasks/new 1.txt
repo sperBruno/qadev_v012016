@@ -1,0 +1,3 @@
+puts "Whats your name?"
+name=gets
+puts "Hi,#{name} . How are you?"

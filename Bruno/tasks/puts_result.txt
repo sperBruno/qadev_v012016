@@ -1,7 +1,24 @@
-brunoBarrios
-Bruno Barrios
-Luis Barrios
-Luis Vargas
-Bruno Luis Barrios
-Bruno Luis Barrios Vargas
-Barrios Vargas Bruno Luis
+1.-	brunoBarrios
+	Bruno Barrios
+	Luis Barrios
+	Luis Vargas
+	Bruno Luis Barrios
+	Bruno Luis Barrios Vargas
+	Barrios Vargas Bruno Luis
+
+3.- La funcion que realiza este simbolo # es el de comentar una linia del codigo cuando se lo
+	situa al inicio  de cada linea 
+
+4.- Research :
+	a)Coments Inline: se utiliza el simbolo de # para comentar una linea de codigo
+
+          Comments Multiline: se utiliza esta estructura =begin que es desde donde se comenzara
+			el codigo y =end que indica hasta donde se comentara el codigo
+
+	b) se debe utilizar el inline cuando solo se quiere commentar una linea de codigo y 
+	    multiline cuando se quiere comentar varias lineas de codigo	
+	Sin embargo ambos sirven para comentar o documentar porciones del codigo
+
+2.- Variable error: este error nos dicee que estamos haciendo referencia a una variable que no a sido 
+ asignado 
+              

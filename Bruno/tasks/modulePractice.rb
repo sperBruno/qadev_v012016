@@ -9,7 +9,7 @@ Move the modules to another file and include them adding the line :
 
 Implement Mixin and Library concept
 =end
-
+=begin
 module Greeting
 	def printHello(name)
 		puts "Hello #{name}"
@@ -33,20 +33,24 @@ module Questions
 		puts "whats your occupation?"
 	end
 end 	
+=end
+
+require_relative "moduleGreeting.rb"
+require_relative "moduleQuestion.rb" 
+ 
 
 class KnowingAPerson
-	include Greeting
-	include Questions
+	
 		def sayingGoodBye(proffesion)
 			puts "#{proffesion}  nice..Sorry, I have to go, have a nice day"
 		end
 end
 
 person=KnowingAPerson.new
-person.nameQuestion
+Questions.nameQuestion
 name=gets.chomp.to_s
-person.printHello(name)
-person.askProffesion
+Greeting.printHello(name)
+Questions.askProffesion
 proffesion=gets.chomp.to_s
 person.sayingGoodBye(proffesion)
-person.printGoodBye
+Greeting.printGoodBye

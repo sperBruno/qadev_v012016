@@ -1,0 +1,15 @@
+Firts Practice resullt
+
+C:\Users\BrunoBarrios\Documents\rubytasks>ruby father.rb
+A father has 1000 to give to his children
+the first child needs 200 Bs
+the second child needs 300 Bs
+the third child needs 290 Bs
+A father has now 210
+
+Second Practice  
+
+C:\Users\BrunoBarrios\Documents\rubytasks>ruby secondPracticeOfSession4.rb
+bruno
+luis
+Jorge

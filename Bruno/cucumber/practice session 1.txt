@@ -1,0 +1,59 @@
+Que es BDD?
+El Desarrollo guiado por comportamiento o BDD es una técnica de desarrollo ágil de software que 
+fomenta la colaboración entre los clientes, los desarrolladores y los ingenieros de calidad.
+
+Cuales son los aspectos mas importantes de BDD?
+
+colaboracion
+especificacion simple 
+facilidad de feedback
+Evita definiciond de requerimientos
+Autodocumentacion
+se enfoca en el comportamiento
+
+Porque es util y cuando puede ser aplicada?
+Es util para la automatizacion de test cases o casos de pruebas para una aplicacion siendo esta entendible
+y cercana al lenguaje natural
+
+
+
+Que tipos de equipos pueden implementar BDD?
+Wquipos de desarrollo agiles
+
+
+Estructura de un feature?
+Structure
+– Name
+– Size [Optional]
+– Priority
+ejemplo
+Tener un Camion
+As a Rockero
+I want to a Camion
+Because I want to be happy
+
+Estructura de user story
+As a [role]
+• I want [feature]
+• So that [benefit]
+
+
+Estructura de Escenario 
+• Given some initial context (the givens)
+• When an event occurs
+• then ensure some outcomes
+ejemplo
+Escenario: Mercancía es correcta y completa
+Dado que recibo nueva mercancía
+Y existe una orden de compra para esa mercancía
+Cuando verifico la mercancía
+Y la mercancía es correcta
+Y las cantidades son correctas
+Entonces le doy ingreso a la mercancía al almacén
+
+Diferencia entre BDD y BDT
+ la principal diferencia entre ambas esta en el alcance. TDD es una practica de desarrollo 
+(se enfoca en como escribir el código y como debería trabajar ese código) mientras que 
+BDD es una metodología de equipo(Se enfoca en porque debes escribir ese código y como se debería comportar ese código).
+
+En TDD el desarrollador escribe los tests mientras que en BDD el usuario final(o PO o analista) en conjunto con los testers escriben los tests (y los Devs solo generan el código necesario para correr esos tests)

@@ -1,0 +1,249 @@
+Feature files practice
+KS
+Karime Salomon <ksalomon@pros.com>
+   Reply all|
+Tue 5:08 PM
+QADEV07 
+ 
+Action Items
+Hi class,
+ 
+For Features practice you should :
+ 
+1.       Create one feature file with the name of an specific feature (e.g. search_customer.feature)
+2.       Into the file you should create the first 3 lines using a multiline comment to simulate a copyright
+3.       Add some title for your feature file and some description
+4.       Run the feature file using –dry-run option (push the result into a txt file)
+5.       Run the feature file without dry-run option (push the result into a txt file)
+6.       Which one is the difference between both executions?
+	The difference between with --dry-run and without --dry-run is that without --dru-run is printed the time that takes
+	to read the feature file e.g. 
+	1 scenario (1 undefined)
+	4 steps (4 undefined)
+	0m0.484s
+	and with --dry-run the time is not printed e.g.
+	1 scenario (1 undefined)
+	4 steps (4 undefined)
+
+
+
+If you have any question please let me know.
+Deadline for this practice is tomorrow at 14:00 (before the class)
+
+============================================================================================
+C:\Users\BrunoBarrios\Documents\rubytasks\cucumber>cucumber search_User_Name.f
+ture --dry -run
+#Bruno Luis Barrios Vargas
+#Practice of session 2 Cucumber
+Feature: This feature is useful to find user's name
+This will help when it is required to find some user configurations or charact
+istics
+that an application might need at a specific moment of an excecution.
+
+  Scenario: Admin needs to find a user properties but he only has the name of
+e user # search_User_Name.feature:10
+    Given Admin has a user's name
+       # search_User_Name.feature:11
+    And admin has a serching application
+       # search_User_Name.feature:12
+    When admin fills the user name fill with the user name
+       # search_User_Name.feature:13
+    Then the porperties of the user is shown on the screen
+       # search_User_Name.feature:14
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^Admin has a user's name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^admin has a serching application$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^admin fills the user name fill with the user name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^the porperties of the user is shown on the screen$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+=================================================================================
+
+C:\Users\BrunoBarrios\Documents\rubytasks\cucumber>cucumber search_User_Name.fe
+ture -dry-run
+#Bruno Luis Barrios Vargas
+#Practice of session 2 Cucumber
+Feature: This feature is useful to find user's name
+This will help when it is required to find some user configurations or characte
+istics
+that an application might need at a specific moment of an excecution.
+
+  Scenario: Admin needs to find a user properties but he only has the name of t
+e user # search_User_Name.feature:10
+    Given Admin has a user's name
+       # search_User_Name.feature:11
+    And admin has a serching application
+       # search_User_Name.feature:12
+    When admin fills the user name fill with the user name
+       # search_User_Name.feature:13
+    Then the porperties of the user is shown on the screen
+       # search_User_Name.feature:14
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^Admin has a user's name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^admin has a serching application$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^admin fills the user name fill with the user name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^the porperties of the user is shown on the screen$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+=========================================================================================
+whithout-run
+
+C:\Users\BrunoBarrios\Documents\rubytasks\cucumber>cucumber search_User_Name.f
+ture -dry
+#Bruno Luis Barrios Vargas
+#Practice of session 2 Cucumber
+Feature: This feature is useful to find user's name
+This will help when it is required to find some user configurations or charact
+istics
+that an application might need at a specific moment of an excecution.
+
+  Scenario: Admin needs to find a user properties but he only has the name of
+e user # search_User_Name.feature:10
+    Given Admin has a user's name
+       # search_User_Name.feature:11
+    And admin has a serching application
+       # search_User_Name.feature:12
+    When admin fills the user name fill with the user name
+       # search_User_Name.feature:13
+    Then the porperties of the user is shown on the screen
+       # search_User_Name.feature:14
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^Admin has a user's name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^admin has a serching application$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^admin fills the user name fill with the user name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^the porperties of the user is shown on the screen$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+=========================================================================================
+without --dry
+C:\Users\BrunoBarrios\Documents\rubytasks\cucumber>cucumber search_User_Name.f
+ture -run
+#Bruno Luis Barrios Vargas
+#Practice of session 2 Cucumber
+Feature: This feature is useful to find user's name
+This will help when it is required to find some user configurations or charact
+istics
+that an application might need at a specific moment of an excecution.
+
+  Scenario: Admin needs to find a user properties but he only has the name of
+e user # search_User_Name.feature:10
+    Given Admin has a user's name
+       # search_User_Name.feature:11
+    And admin has a serching application
+       # search_User_Name.feature:12
+    When admin fills the user name fill with the user name
+       # search_User_Name.feature:13
+    Then the porperties of the user is shown on the screen
+       # search_User_Name.feature:14
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+0m0.484s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^Admin has a user's name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^admin has a serching application$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^admin fills the user name fill with the user name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^the porperties of the user is shown on the screen$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+===============================================================================
+withou --dry-run
+C:\Users\BrunoBarrios\Documents\rubytasks\cucumber>cucumber search_User_Name.fea
+ture
+#Bruno Luis Barrios Vargas
+#Practice of session 2 Cucumber
+Feature: This feature is useful to find user's name
+This will help when it is required to find some user configurations or character
+istics
+that an application might need at a specific moment of an excecution.
+
+  Scenario: Admin needs to find a user properties but he only has the name of th
+e user # search_User_Name.feature:10
+    Given Admin has a user's name
+       # search_User_Name.feature:11
+    And admin has a serching application
+       # search_User_Name.feature:12
+    When admin fills the user name fill with the user name
+       # search_User_Name.feature:13
+    Then the porperties of the user is shown on the screen
+       # search_User_Name.feature:14
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+0m0.406s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^Admin has a user's name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^admin has a serching application$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^admin fills the user name fill with the user name$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^the porperties of the user is shown on the screen$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+=============================================================================
+
+
+

@@ -7,12 +7,12 @@ Feature: This feature is University situations of some classes
 Scenario: I arrived late to Programming class
 	And I did my homework
 Given I arrived too late to a programming class 
-	But I had done my task
+	And I had done my task
 When I asked to come in to class
 	And the professor ask me for my task
 Then I told the professor that my homework was done
 	And the professor accepted my task 
-	But he did not let me to come in
+	And he did not let me to come in
 	
 Scenario: I made an exposition in a university class
 	

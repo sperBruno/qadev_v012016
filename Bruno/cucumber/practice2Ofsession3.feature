@@ -11,12 +11,7 @@ When I typed the  subject to the text box field
  And I click on search button
 Then The results of my research should be displayed
 
-Scenario: Opening A google application
 
-Given: I had to open a google application
-When I clicked on the apps icon that is on the rigth side of the page
- And I click on an application
-Then the application should be displayed
 
 Scenario: Verify the Google icon 
 

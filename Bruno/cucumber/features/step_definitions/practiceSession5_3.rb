@@ -31,8 +31,11 @@ Given(/^i have to do task on this classes:$/) do |table|
 end
 
 When(/^I had to investigate this on (\w+) about (\w+) as (\d+) task:$/) do |col,subject, row|
-	 subject,row,col=subject.to_s,row.to_i,row.to_i
-  @board[row][col]=subject
+		if col=="Legislacion" then colu=1 end 
+		if col=="Redes neuronales" then colu=2 end 
+		if col=="Taller 1" then colu=3 end 
+	subject,row,colu=subject.to_s,row.to_i,colu.to_i
+  @board[row][colu]=subject
   puts @board
 end
 
